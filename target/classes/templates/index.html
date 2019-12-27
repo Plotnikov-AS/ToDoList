@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List(<span th:text="${tasksCount}">0</span>)</h1>
+    <br><br>
+    <div id="tasks-list">
+        <div th:each="task : ${tasks}">
+            <a href="#" th:attr="data-id=${task.id}" th:text="${task.description}"></a>
+        </div>
+    </div>
+</body>
+</html>
