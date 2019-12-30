@@ -13,16 +13,25 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
-    private String description;
-
     @NotNull
-    private TaskStatus taskStatus;
+    private String shortDesc;
+    private String description;
+    @NotNull
+    private TaskStatus status;
 
-    enum TaskStatus {
+    public enum TaskStatus {
         NEW,
         ON_AIR,
         DONE
+    }
+
+    public Task() {
+    }
+
+    public Task(String shortDesc, String description, @NotNull TaskStatus status) {
+        this.shortDesc = shortDesc;
+        this.description = description;
+        this.status = status;
     }
 
     public Integer getId() {
@@ -41,12 +50,20 @@ public class Task {
         this.description = description;
     }
 
-    public TaskStatus getTaskStatus() {
-        return taskStatus;
+    public TaskStatus getStatus() {
+        return status;
     }
 
-    public void setTaskStatus(TaskStatus taskStatus) {
-        this.taskStatus = taskStatus;
+    public void setStatus(TaskStatus status) {
+        this.status = status;
+    }
+
+    public String getShortDesc() {
+        return shortDesc;
+    }
+
+    public void setShortDesc(String shortDesc) {
+        this.shortDesc = shortDesc;
     }
 }
 

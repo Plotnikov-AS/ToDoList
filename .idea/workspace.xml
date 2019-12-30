@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f36cd4f-0a66-4628-86f5-60e119134f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/DefaultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/model/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/model/TaskRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/ToDoList.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/TaskController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/model/Task$TaskStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/model/Task.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/model/TaskRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/CaseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/response/Case.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/model/TaskRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/model/TaskRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ToDoList.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/ToDoList.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/DefaultController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/model/Task$TaskStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/model/Task$TaskStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/model/TaskRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/model/TaskRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,13 +65,25 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="ToDoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="main.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,18 +97,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -105,6 +109,19 @@
       <updated>1577383314793</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577445787249">

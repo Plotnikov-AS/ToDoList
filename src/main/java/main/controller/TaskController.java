@@ -1,4 +1,4 @@
-package main;
+package main.controller;
 
 import main.model.TaskRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +9,7 @@ import main.model.Task;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -16,7 +17,9 @@ public class TaskController {
     @Autowired
     private TaskRepo taskRepo;
 
-    @GetMapping("/cases/")
+
+
+    @GetMapping("/tasks/")
     public List<Task> listAllCases(){
         Iterable<Task> taskIterable = taskRepo.findAll();
         ArrayList<Task> tasks = new ArrayList<>();
@@ -26,7 +29,7 @@ public class TaskController {
         return tasks;
     }
 
-    @GetMapping("/cases/{id}")
+    @GetMapping("/tasks/{id}")
     public ResponseEntity getCase(@PathVariable int id){
         Optional<Task> optionalTask = taskRepo.findById(id);
         if (!optionalTask.isPresent()){
@@ -36,7 +39,7 @@ public class TaskController {
     }
 
 
-    @DeleteMapping("/cases/{id}")
+    @DeleteMapping("/tasks/{id}")
     public ResponseEntity deleteCase(@PathVariable int id){
         Optional<Task> optionalTask = taskRepo.findById(id);
         if (optionalTask.isPresent()){
@@ -46,12 +49,9 @@ public class TaskController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
     }
 
-    @PostMapping("/cases/")
-    public void addTask(Task newTask){
-        taskRepo.save(newTask);
-    }
 
-    @PostMapping("/cases/{id}")
+
+    @PostMapping("/tasks/{id}")
     public ResponseEntity updateTask(@PathVariable int id, String newDesc){
         Optional<Task> optionalTask = taskRepo.findById(id);
         if (optionalTask.isPresent()){
