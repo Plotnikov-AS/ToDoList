@@ -2,7 +2,7 @@
 
 <@c.page>
 Task editor
-<form action="/tasks" method=post>
+<form action="/tasks" method="post">
     <div>
         Task id - ${task.id}<br>
         Task status - ${task.status}<br>
@@ -12,6 +12,7 @@ Task editor
         <input type="text" name="description" placeholder="Описание задачи" value=${task.description}></input><br>
         <button type="submit">Save</button>
         <input type="hidden" name="id" value=${task.id}></input>
+                <input type="hidden" name="_csrf" value="${_csrf.token}" />
     </div>
 </form>
 <a href="/main">Main page</a>

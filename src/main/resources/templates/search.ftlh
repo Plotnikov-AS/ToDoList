@@ -9,13 +9,15 @@
             <form action="/search" method="post">
                 <input type="text" name="id" placeholder="№ задачи">
                 <button type="submit">Найти</button>
-            </form>
+                    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                    </form>
         </div>
         <div>Или
             <form action="/search/searchByTag" method="post">
                 <input type="text" name="tag" placeholder="Tag">
                 <button type="submit">Найти</button>
-            </form>
+                    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                    </form>
         </div>
 
 </@c.page>
