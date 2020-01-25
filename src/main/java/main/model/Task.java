@@ -1,6 +1,6 @@
 package main.model;
 
-import javafx.beans.DefaultProperty;
+import main.model.Statuses.TaskStatus;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,22 +14,16 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @NotNull
-    private String shortDesc;
+    private String tag;
     private String description;
     @NotNull
     private TaskStatus status;
 
-    public enum TaskStatus {
-        NEW,
-        ON_AIR,
-        DONE
-    }
-
     public Task() {
     }
 
-    public Task(String shortDesc, String description, @NotNull TaskStatus status) {
-        this.shortDesc = shortDesc;
+    public Task(String tag, String description, @NotNull TaskStatus status) {
+        this.tag = tag;
         this.description = description;
         this.status = status;
     }
@@ -58,12 +52,12 @@ public class Task {
         this.status = status;
     }
 
-    public String getShortDesc() {
-        return shortDesc;
+    public String getTag() {
+        return tag;
     }
 
-    public void setShortDesc(String shortDesc) {
-        this.shortDesc = shortDesc;
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }
 

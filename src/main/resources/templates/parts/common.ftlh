@@ -1,3 +1,4 @@
+<#macro page>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,7 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div>Hello, user!</div>
-    <a href="/main">Task list</a>
+<#nested>
 </body>
 </html>
+</#macro>

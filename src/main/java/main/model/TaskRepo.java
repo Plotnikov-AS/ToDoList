@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface TaskRepo extends CrudRepository<Task, Integer> {
-    List<Task> findByShortDesc(String filter);
+    List<Task> findByTag(String tag);
 }
